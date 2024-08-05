@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<style>
+    body{margin: 0px;}
+    #bts{
+        background-color: #0000ff;
+        
+        
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .flat-bt{
+       
+        background-color: white;
+        margin: 0px;
+        padding:0px;
+        
+        border: none;
+       
+    }
+    .flat-bt img{
+        margin:0px;
+        padding: 0px;
+        width: 100%;
+        object-fit: cover;
+        transition: 2s;
+    }
+    .flat-bt:hover img {
+        transition: 1s;
+        transform: scale(1.2);
+        cursor:pointer;
+    }
+ 
+   
+   
+    </style>
+</head>
+
+<body>
+
+        <div id="bts">
+            <button class="flat-bt" onclick="document.getElementById('ref').scrollIntoView({behavior:'smooth'})">
+                <img src="ref.png"/>
+            </button>
+            <button class="flat-bt">
+                <img src="trans.png"/>
+            </button>
+            <button class="flat-bt">
+                <img src="vida.png"/>
+            </button>
+        
+            <button class="flat-bt">
+                <img src="medic.png"/>
+            </button>
+            <button class="flat-bt">
+                <img src="dente.png"/>
+            </button>
+            <button class="flat-bt">
+                <img src="acad.png"/>
+            </button>
+        
+        </div>
+        
+  <div id="beneficios">
+    <h1 id="ref">REFEICAO</h1>
+    <h1 id="vt">VT</h1>
+    <h1 id="vida">SEGURO DE VIDA</h1>
+    <h1 id="medic">MEDICO</h1>
+    <h1 id="odonto">ODONTO</h1>
+    <h1 id="wellhub">WELLHUB</h1>
+    <H1 id="meude">meu de</H1>
+  </div>
+   
+
+</body>
+
+</html>
